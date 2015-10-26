@@ -14,14 +14,15 @@
 #import "MusicPlayerController.h"
 #import "AudioStreamer.h"
 #import "AudioPlayer.h"
-
+#import "AppDelegate.h"
+#import "Music.h"
 @interface RootViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) MusicPlayerController *musicPlayerController;
-
+@property (nonatomic, strong) AppDelegate *appDelegate;
 @end
 
 @implementation RootViewController
@@ -29,14 +30,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _appDelegate = [[UIApplication sharedApplication] delegate];
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     UINavigationController *nav = [story instantiateViewControllerWithIdentifier:@"ViewController"];
     
-//    ViewController *vc = [nav.viewControllers firstObject];
-    
-    
-//    nav.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60);
+
     [self addChildViewController:nav];
     [self.view addSubview:nav.view];
     
@@ -46,11 +45,12 @@
     
     NSLog(@"model.name:%@",self.model.name);
     
-//    [self.musicPlayerController addObserver:self forKeyPath:@"musicModel" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(musicChanage:) name:@"MUSICMODEL" object:nil];
     
     
     [self addTapForBottomView];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -110,25 +110,11 @@
     
     (id)str != [NSNull null] ?  self.songName.text = str : nil;
     (id)_model.singerName != [NSNull null] ? self.writerName.text = _model.singerName : nil;
-    
-
-    
+ 
 }
 
 
 
-//- (void)setModel:(MusicModel *)model
-//{
-//    if (_model != model) {
-//        _model = model;
-//        [self.img.imageView sd_setImageWithURL:[NSURL URLWithString:_model.picUrl] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-//            
-//        }];
-//        self.songName.text = _model.name;
-//        self.writerName.text = _model.singerName;
-//    }
-//   
-//}
 
 - (IBAction)songListButton:(UIButton *)sender {
     
@@ -151,19 +137,21 @@
     return 1;
 }
 - (IBAction)playerAction:(UIButton *)sender {
-//    MusicPlayViewController
+
     sender.selected = !sender.selected;
     
     MusicPlayerController *player =  [MusicPlayerController shareMusicPlayerController];
     
-    if (player.player.streamer.isPaused) {
+ 
+    if (!player.player.streamer.isPlaying) {
         [player.player play];
     }else{
         
         [player.player.streamer pause];
     }
+    
+    
 
-//
     
 }
 - (IBAction)musicVC:(UIButton *)sender {

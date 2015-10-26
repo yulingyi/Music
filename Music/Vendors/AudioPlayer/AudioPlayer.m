@@ -41,7 +41,16 @@
 }
 
 - (void)play
-{        
+{
+    if (url == nil) {
+        
+        UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"亲,炫一首歌吧!" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        [alter show];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [alter dismissWithClickedButtonIndex:0 animated:YES];
+        });
+        
+    }else{
     if (!streamer) {
         
         self.streamer = [[AudioStreamer alloc] initWithURL:self.url];
@@ -67,6 +76,7 @@
         [streamer pause];
     } else {
         [streamer start];
+    }
     }
 }
 

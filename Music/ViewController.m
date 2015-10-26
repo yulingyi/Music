@@ -18,6 +18,7 @@
 #import "MusicPlayerController.h"
 #import "RootViewController.h"
 #import "songListViewController.h"
+#import "MBProgressHUD.h"
 @interface ViewController ()<UIScrollViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 
@@ -31,6 +32,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [MBProgressHUD showHUDAddedTo:self.collectionView animated:YES];
+    
     
     [self.collectionView reloadData];
     
@@ -115,7 +119,7 @@
                 if ([dic[@"auditionList"] count]) {
                     
                     
-                    model.url = dic[@"auditionList"][0][@"url"];
+                    model.url = dic[@"auditionList"][2][@"url"];
                     
                     
                     
@@ -167,6 +171,7 @@
     
     
     [self.collectionView reloadData];
+    [MBProgressHUD hideHUDForView:self.collectionView animated:YES];
     
 }
 
@@ -266,7 +271,12 @@
             }
       
             player.musicModel = cell.model;
-            [player.musicList insertObject:cell.model atIndex:0];;
+            
+            if (![player.musicList containsObject:cell.model]) {
+            
+                [player.musicList insertObject:cell.model atIndex:0];;
+            }
+     
             NSLog(@"change model.name:%@",player.musicModel.name);
             player.player.url =[NSURL URLWithString:cell.model.url];
             [player.player play];

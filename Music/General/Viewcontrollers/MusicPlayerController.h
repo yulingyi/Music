@@ -12,10 +12,15 @@
 #import "MusicModel.h"
 #import "AFHTTPRequestOperationManager.h"
 @interface MusicPlayerController : NSObject
+@property (nonatomic, assign) BOOL isCirculation;
+@property (nonatomic, assign) BOOL isOneCirculation;
 @property (nonatomic, strong) MusicModel *musicModel;
 @property (nonatomic, strong) AVAudioPlayer *avPlayer;
 @property (nonatomic, strong) AudioPlayer *player;
 @property (nonatomic, strong) NSMutableArray *musicList;
 @property (nonatomic, strong) AFHTTPRequestOperationManager *manger;
-+ shareMusicPlayerController;
++ (MusicPlayerController *)shareMusicPlayerController;
+- (void)downLoadMusic:(MusicModel *)music;
+- (void)collection:(MusicModel *)musicModel;
+- (void)removeFromSQLWith:(MusicModel *)musicModel;
 @end

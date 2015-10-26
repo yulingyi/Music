@@ -8,7 +8,7 @@
 
 #include <pthread.h>
 #include <AudioToolbox/AudioToolbox.h>
-
+#import <AVFoundation/AVFoundation.h>
 #define LOG_QUEUED_BUFFERS 0
 
 #define kNumAQBufs 16			// Number of audio queue buffers we allocate.
@@ -37,17 +37,19 @@
 
 typedef enum
 {
-	AS_INITIALIZED = 0,
-	AS_STARTING_FILE_THREAD = 1,          // 启动线程
-	AS_WAITING_FOR_DATA = 2,              // 准备数据
-	AS_FLUSHING_EOF = 3,                  // 数据准备完毕
-	AS_WAITING_FOR_QUEUE_TO_START = 4,    // 排队播放
-	AS_PLAYING = 5,                       // 正在播放
-	AS_BUFFERING = 6,                     // 网络不好,自动缓冲
-	AS_PAUSED = 7,                        // 手动暂停    
-	AS_STOPPING = 8,                      // 即将停止,自动提醒
-	AS_STOPPED = 9,                       // 已停止播放
+    AS_INITIALIZED = 0,
+    AS_STARTING_FILE_THREAD = 1,          // 启动线程
+    AS_WAITING_FOR_DATA = 2,              // 准备数据
+    AS_FLUSHING_EOF = 3,                  // 数据准备完毕
+    AS_WAITING_FOR_QUEUE_TO_START = 4,    // 排队播放
+    AS_PLAYING = 5,                       // 正在播放
+    AS_BUFFERING = 6,                     // 网络不好,自动缓冲
+    AS_PAUSED = 7,                        // 手动暂停
+    AS_STOPPING = 8,                      // 即将停止,自动提醒
+    AS_STOPPED = 9,                       // 已停止播放
 } AudioStreamerState;
+
+
 
 typedef enum
 {

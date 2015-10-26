@@ -2,7 +2,7 @@
 //  Music.m
 //  Music
 //
-//  Created by laouhn on 15/10/24.
+//  Created by laouhn on 15/10/26.
 //  Copyright (c) 2015年 laouhn. All rights reserved.
 //
 
@@ -12,14 +12,14 @@
 @implementation Music
 
 @dynamic name;
+@dynamic singerName;
 @dynamic albumld;
 @dynamic albunName;
-@dynamic picUrl;
-@dynamic singerName;
-@dynamic singerId;
-@dynamic songId;
 @dynamic url;
 @dynamic song_name;
+@dynamic picUrl;
+@dynamic singerId;
 @dynamic value;
+@dynamic songId;
 
 @end

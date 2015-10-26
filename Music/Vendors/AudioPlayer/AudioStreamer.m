@@ -239,7 +239,10 @@ void ASReadStreamCallBack
 			((state == AS_STOPPING || state == AS_STOPPED) &&
              stopReason != AS_STOPPING_TEMPORARILY))
 		{
+//             [[NSNotificationCenter defaultCenter] postNotificationName:@"ISFINISHING" object:nil];
 			return YES;
+            
+           
 		}
 	}
     
@@ -833,6 +836,8 @@ cleanup:
 
 	[pool release];
 }
+
+
 
 
 // internalSeekToTime:
