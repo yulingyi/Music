@@ -101,7 +101,7 @@
     
     UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(0, -60, self.view.frame.size.width, 60)];
     lable.textAlignment = NSTextAlignmentCenter;
-    lable.backgroundColor = [UIColor blackColor];
+    lable.backgroundColor = [UIColor blueColor];
     lable.textColor = [UIColor whiteColor];
     lable.text = str;
     

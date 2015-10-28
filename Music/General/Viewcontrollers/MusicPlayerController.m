@@ -293,14 +293,14 @@
     music.albumld = [musicModel.albumld intValue];
     music.picUrl = musicModel.picUrl;
     
-    UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"收藏成功" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
-    [alterView show];
-    
-    [delegate saveContext];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [alterView dismissWithClickedButtonIndex:0 animated:YES];
-    });
+//    UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"收藏成功" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+//    [alterView show];
+//    
+//    [delegate saveContext];
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [alterView dismissWithClickedButtonIndex:0 animated:YES];
+//    });
     
 }
 
