@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *VerticalSpace;
 @property (weak, nonatomic) IBOutlet UILabel *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *playerButton;
 @property (nonatomic, strong) MusicModel * model;
 @property (nonatomic, strong) NSMutableArray *musicList;
 @end

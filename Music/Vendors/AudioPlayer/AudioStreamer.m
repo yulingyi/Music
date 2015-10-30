@@ -239,7 +239,7 @@ void ASReadStreamCallBack
 			((state == AS_STOPPING || state == AS_STOPPED) &&
              stopReason != AS_STOPPING_TEMPORARILY))
 		{
-//             [[NSNotificationCenter defaultCenter] postNotificationName:@"ISFINISHING" object:nil];
+
 			return YES;
             
            
@@ -356,6 +356,8 @@ void ASReadStreamCallBack
 		case AS_AUDIO_QUEUE_FLUSH_FAILED:
 			return AS_AUDIO_QUEUE_FLUSH_FAILED_STRING;
 		case AS_AUDIO_DATA_NOT_FOUND:
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"dataMiss" object:nil];
+            
 			return AS_AUDIO_DATA_NOT_FOUND_STRING;
 		case AS_GET_AUDIO_TIME_FAILED:
 			return AS_GET_AUDIO_TIME_FAILED_STRING;

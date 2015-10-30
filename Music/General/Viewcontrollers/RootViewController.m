@@ -39,6 +39,7 @@
     [self addChildViewController:nav];
     [self.view addSubview:nav.view];
     
+   
     self.musicPlayerController = [MusicPlayerController shareMusicPlayerController];
     
     self.model = self.musicPlayerController.musicModel;
@@ -48,7 +49,7 @@
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(musicChanage:) name:@"MUSICMODEL" object:nil];
     
-    
+//    self.playerButton.selected = NO;
     [self addTapForBottomView];
     
     // Do any additional setup after loading the view.
@@ -82,9 +83,15 @@
     
     
 }
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
- 
+    [super viewWillAppear:animated];
+    if ([self.musicPlayerController.player.streamer isPaused]) {
+       self.playerButton.selected = YES;
+    }else
+    {
+        self.playerButton.selected = NO;
+    }
        [self configuration];
 }
 
@@ -94,10 +101,10 @@
 }
 - (void)configuration
 {
-    MusicPlayerController *musicPlayerController = [MusicPlayerController shareMusicPlayerController];
+
     
-    self.model = musicPlayerController.musicModel;
-    self.musicList = musicPlayerController.musicList;
+    self.model = self.musicPlayerController.musicModel;
+    self.musicList = self.musicPlayerController.musicList;
 
     self.img.layer.cornerRadius = 20;
     self.img.clipsToBounds = YES;
@@ -118,10 +125,25 @@
 
 - (IBAction)songListButton:(UIButton *)sender {
     
-    [UIView animateWithDuration:12 animations:^{
 
-        self.VerticalSpace.constant = self.VerticalSpace.constant ?  0: -400;
-    }];
+
+        if (self.VerticalSpace.constant) {
+            
+            self.VerticalSpace.constant = 0;
+        [self.tableView setNeedsUpdateConstraints];
+        [UIView animateWithDuration:0.1f animations:^{
+            [self.tableView layoutIfNeeded];
+        }];
+        }else
+        {
+            self.VerticalSpace.constant = -250;
+            [self.tableView setNeedsUpdateConstraints];
+            [UIView animateWithDuration:0.1f animations:^{
+                [self.tableView layoutIfNeeded];
+            }];
+
+        }
+   
         [self.tableView reloadData];
  
     
@@ -143,7 +165,11 @@
     MusicPlayerController *player =  [MusicPlayerController shareMusicPlayerController];
     
  
-    if (!player.player.streamer.isPlaying) {
+    if (player.player.streamer.isPlaying == NO) {
+     
+        if (player.player.url == nil) {
+            player.player.url =[NSURL URLWithString: self.model.url];
+        }
         [player.player play];
     }else{
         
@@ -193,6 +219,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.model = self.musicList[indexPath.row];
     if (self.musicPlayerController.musicModel != self.model) {
         if (self.musicPlayerController.player.isProcessing) {

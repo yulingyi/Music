@@ -13,6 +13,7 @@
 @interface MusicPlayerController ()
 
 @property (nonatomic, retain) NSTimer *timer;
+@property (nonatomic, assign) int isDataMiss;
 
 @end
 
@@ -32,17 +33,19 @@
         self.isCirculation = YES;
         self.isOneCirculation = NO;
         
-
+        self.isDataMiss = NO;
         self.player = [[AudioPlayer alloc] init];
 
         self.musicList = [@[] mutableCopy];
+        [self getMusicListFromSQL];
         self.manger = [AFHTTPRequestOperationManager manager];
 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getStateForStreamer:) name:ASStatusChangedNotification object:nil];
         
         [self addObserver:self forKeyPath:@"musicModel" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
       
-        [self getMusicListFromSQL];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataMiss:) name:@"dataMiss" object:nil];
+       
     }
     return self;
 }
@@ -89,20 +92,22 @@
             break;
         case 6:
         {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"AS_BUFFERING" object:nil];
-            UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"网络不好,自动缓冲" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
-            
-            [alter show];
-            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [alter dismissWithClickedButtonIndex:0 animated:YES];
-            });
-            
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"AS_BUFFERING" object:nil];
+//            UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"网络不好,自动缓冲" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+//            
+//            [alter show];
+//            
+//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//                [alter dismissWithClickedButtonIndex:0 animated:YES];
+//            });
+//            
         }
             break;
         case  9:
+          
+                 [self isFinished];
             
-            [self isFinished];
+    
             break;
 
         default:
@@ -112,9 +117,27 @@
 
 }
 
+
+- (void)dataMiss:(NSNotification *)notification
+{
+    self.isDataMiss = YES;
+        UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"网络不好,数据丢失" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+    
+                [alter show];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [alter dismissWithClickedButtonIndex:0 animated:YES];
+                });
+
+
+
+
+
+
+}
+
 - (void)isFinished
 {
-    if (self.player.streamer.isFinishing) {
+    if (self.player.streamer.state == AS_STOPPED) {
         
         if (_isCirculation ) {
             if (_isOneCirculation) {
@@ -129,7 +152,7 @@
             }
         }else
         {
-                NSInteger i = arc4random() % self.musicList.count + 1;
+                NSInteger i = arc4random() % self.musicList.count + 0;
             
             [self.musicList exchangeObjectAtIndex:0 withObjectAtIndex:i];
 
@@ -166,8 +189,8 @@
 {
     
     
-    NSFetchRequest * request = [[NSFetchRequest alloc] initWithEntityName:@"Music"];
-    
+    NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:@"Music"];
+    NSLog(@"%@",NSHomeDirectory());
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     NSArray * result =  [appDelegate.managedObjectContext executeFetchRequest:request error:nil];
@@ -212,73 +235,82 @@
     
 }
 
-- (void)downLoadMusic:(MusicModel *)music
-{
-        NSString * cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
-        NSLog(@"沙盒路径%@", cachePath);
-        
-        
+//- (void)downLoadMusic:(MusicModel *)music
+//{
+//        NSString * cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+//        NSLog(@"沙盒路径%@", cachePath);
+//        
+//        
+//
+//        NSString * downLoadDicCacheWithVideo = [cachePath stringByAppendingPathComponent:@"DownLoadChacheWithMusic"];
+//        NSFileManager * fileManager = [NSFileManager defaultManager];
+//        if (![fileManager fileExistsAtPath:downLoadDicCacheWithVideo]) {
+//            [fileManager createDirectoryAtPath:downLoadDicCacheWithVideo withIntermediateDirectories:YES attributes:nil error:nil];
+//        }
+//        
+//        NSString * musicPath = [downLoadDicCacheWithVideo stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp4",music.name]];
+//        if ([[NSFileManager defaultManager] fileExistsAtPath:musicPath]) {
+//            UIAlertView * alterView = [[UIAlertView alloc] initWithTitle:@"音乐已存在" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+//            [alterView show];
+//            
+//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//                [alterView dismissWithClickedButtonIndex:0 animated:YES];
+//            });
+// 
+//        }else{
+//            NSURL * url = [NSURL URLWithString:music.url];
+//
+//            NSURLRequest * request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:-1];
+//            AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc] initWithRequest:request] ;
+//            
+//            operation.outputStream = [[NSOutputStream alloc] initToFileAtPath:musicPath append:YES];
+////            [operation start];
+//            [self.manger.operationQueue addOperation:operation];
+//            
+//            
+//            [operation setUploadProgressBlock:^(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
+//                NSLog(@"%f",(float)totalBytesWritten / totalBytesExpectedToWrite);
+//            }];
+//            
+//            __weak MusicModel *musicBlock = music;
+//            __block NSString *musicPathBlock = musicPath;
+//            [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+//                NSString * downLoadDicWithVideo = [cachePath stringByAppendingPathComponent:@"DownLoadWithMusic"];
+//                NSFileManager * fileManager = [NSFileManager defaultManager];
+//                if (![fileManager fileExistsAtPath:downLoadDicWithVideo]) {
+//                    [fileManager createDirectoryAtPath:downLoadDicWithVideo withIntermediateDirectories:YES attributes:nil error:nil];
+//                }
+//                NSString * musicPath = [downLoadDicWithVideo stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp4",musicBlock.name]];
+//
+//                
+//                [fileManager moveItemAtPath:musicPathBlock toPath:musicPath error:nil];
+//              
+//            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//                UIAlertView *alter = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%@ 下载失败..." ,music.name] message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
+//                
+//                [alter show];
+//                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//                    [alter dismissWithClickedButtonIndex:0 animated:YES];
+//                });
+//            }];
+//        }
+//
+//
+//}
 
-        NSString * downLoadDicCacheWithVideo = [cachePath stringByAppendingPathComponent:@"DownLoadChacheWithMusic"];
-        NSFileManager * fileManager = [NSFileManager defaultManager];
-        if (![fileManager fileExistsAtPath:downLoadDicCacheWithVideo]) {
-            [fileManager createDirectoryAtPath:downLoadDicCacheWithVideo withIntermediateDirectories:YES attributes:nil error:nil];
-        }
-        
-        NSString * musicPath = [downLoadDicCacheWithVideo stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp4",music.name]];
-        if ([[NSFileManager defaultManager] fileExistsAtPath:musicPath]) {
-            UIAlertView * alterView = [[UIAlertView alloc] initWithTitle:@"音乐已存在" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
-            [alterView show];
-            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [alterView dismissWithClickedButtonIndex:0 animated:YES];
-            });
- 
-        }else{
-            NSURL * url = [NSURL URLWithString:music.url];
 
-            NSURLRequest * request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:-1];
-            AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc] initWithRequest:request] ;
-            
-            operation.outputStream = [[NSOutputStream alloc] initToFileAtPath:musicPath append:YES];
-//            [operation start];
-            [self.manger.operationQueue addOperation:operation];
-            
-            
-            [operation setUploadProgressBlock:^(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
-                NSLog(@"%f",(float)totalBytesWritten / totalBytesExpectedToWrite);
-            }];
-            
-            __weak MusicModel *musicBlock = music;
-            __block NSString *musicPathBlock = musicPath;
-            [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                NSString * downLoadDicWithVideo = [cachePath stringByAppendingPathComponent:@"DownLoadWithMusic"];
-                NSFileManager * fileManager = [NSFileManager defaultManager];
-                if (![fileManager fileExistsAtPath:downLoadDicWithVideo]) {
-                    [fileManager createDirectoryAtPath:downLoadDicWithVideo withIntermediateDirectories:YES attributes:nil error:nil];
-                }
-                NSString * musicPath = [downLoadDicWithVideo stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp4",musicBlock.name]];
-
-                
-                [fileManager moveItemAtPath:musicPathBlock toPath:musicPath error:nil];
-              
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                UIAlertView *alter = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%@ 下载失败..." ,music.name] message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
-                
-                [alter show];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    [alter dismissWithClickedButtonIndex:0 animated:YES];
-                });
-            }];
-        }
-
-
-}
-
-
-- (void)collection:(MusicModel *)musicModel{
+- (BOOL)collection:(MusicModel *)musicModel{
     
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSFetchRequest * request = [NSFetchRequest fetchRequestWithEntityName:@"Music"];
+    NSArray * result =  [delegate.managedObjectContext executeFetchRequest:request error:nil];
+    for (Music *music in result) {
+        if ((music.albunName ?music.albunName :music.name) == (musicModel.albunName ?musicModel.albunName :musicModel.name)) {
+            return NO;
+        }
+    }
+
+    
     Music *music = [NSEntityDescription
                     insertNewObjectForEntityForName:@"Music" inManagedObjectContext:delegate.managedObjectContext];
     
@@ -293,15 +325,8 @@
     music.albumld = [musicModel.albumld intValue];
     music.picUrl = musicModel.picUrl;
     
-//    UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"收藏成功" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
-//    [alterView show];
-//    
-//    [delegate saveContext];
-//    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [alterView dismissWithClickedButtonIndex:0 animated:YES];
-//    });
-    
+    [delegate saveContext];
+    return YES;
 }
 
 

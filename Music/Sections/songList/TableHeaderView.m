@@ -24,7 +24,7 @@
         [self.playerLabel.titleLabel setTextAlignment:NSTextAlignmentLeft];
         self.downLoadLabel = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 100 , 10, 100, 40)];
 
-        [self.downLoadLabel setTitle:@"下载全部" forState:UIControlStateNormal] ;
+        [self.downLoadLabel setTitle:@"管理全部" forState:UIControlStateNormal] ;
         
         [self addSubview:self.playerLabel];
         [self addSubview:self.downLoadLabel];

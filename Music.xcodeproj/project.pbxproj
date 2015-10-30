@@ -28,6 +28,27 @@
 		5316DF2F1BD766DE00B5CF47 /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5316DF2E1BD766DE00B5CF47 /* HeaderCollectionReusableView.m */; };
 		5316DF341BD7704500B5CF47 /* OneCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5316DF331BD7704500B5CF47 /* OneCollectionViewCell.m */; };
 		5316DF371BD7769800B5CF47 /* TwoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5316DF361BD7769800B5CF47 /* TwoCollectionViewCell.m */; };
+		5318D2141BE214CC00B5C06C /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2001BE214CC00B5C06C /* Icon-60.png */; };
+		5318D2151BE214CC00B5C06C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2011BE214CC00B5C06C /* Icon-60@2x.png */; };
+		5318D2161BE214CC00B5C06C /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2021BE214CC00B5C06C /* Icon-60@3x.png */; };
+		5318D2171BE214CC00B5C06C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2031BE214CC00B5C06C /* Icon-72.png */; };
+		5318D2181BE214CC00B5C06C /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2041BE214CC00B5C06C /* Icon-72@2x.png */; };
+		5318D2191BE214CC00B5C06C /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2051BE214CC00B5C06C /* Icon-76.png */; };
+		5318D21A1BE214CC00B5C06C /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2061BE214CC00B5C06C /* Icon-76@2x.png */; };
+		5318D21B1BE214CC00B5C06C /* Icon-76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2071BE214CC00B5C06C /* Icon-76@3x.png */; };
+		5318D21C1BE214CC00B5C06C /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2081BE214CC00B5C06C /* Icon-Small-50.png */; };
+		5318D21D1BE214CC00B5C06C /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2091BE214CC00B5C06C /* Icon-Small-50@2x.png */; };
+		5318D21E1BE214CC00B5C06C /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D20A1BE214CC00B5C06C /* Icon-Small.png */; };
+		5318D21F1BE214CC00B5C06C /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D20B1BE214CC00B5C06C /* Icon-Small@2x.png */; };
+		5318D2201BE214CC00B5C06C /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D20C1BE214CC00B5C06C /* Icon-Small@3x.png */; };
+		5318D2211BE214CC00B5C06C /* Icon-Spotlight-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D20D1BE214CC00B5C06C /* Icon-Spotlight-40.png */; };
+		5318D2221BE214CC00B5C06C /* Icon-Spotlight-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D20E1BE214CC00B5C06C /* Icon-Spotlight-40@2x.png */; };
+		5318D2231BE214CC00B5C06C /* Icon-Spotlight-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D20F1BE214CC00B5C06C /* Icon-Spotlight-40@3x.png */; };
+		5318D2241BE214CC00B5C06C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2101BE214CC00B5C06C /* Icon.png */; };
+		5318D2251BE214CC00B5C06C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2111BE214CC00B5C06C /* Icon@2x.png */; };
+		5318D2261BE214CC00B5C06C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2121BE214CC00B5C06C /* iTunesArtwork */; };
+		5318D2271BE214CC00B5C06C /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2131BE214CC00B5C06C /* iTunesArtwork@2x */; };
+		5318D2291BE21D6900B5C06C /* agreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 5318D2281BE21D6900B5C06C /* agreement.html */; };
 		5319DA111BDB349400D8A48A /* AudioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5319DA071BDB349400D8A48A /* AudioButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5319DA121BDB349400D8A48A /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5319DA091BDB349400D8A48A /* AudioPlayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5319DA131BDB349400D8A48A /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5319DA0B1BDB349400D8A48A /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -35,6 +56,30 @@
 		5319DA151BDB349400D8A48A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 5319DA0E1BDB349400D8A48A /* play.png */; };
 		5319DA161BDB349400D8A48A /* screenshots.png in Resources */ = {isa = PBXBuildFile; fileRef = 5319DA0F1BDB349400D8A48A /* screenshots.png */; };
 		5319DA171BDB349400D8A48A /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 5319DA101BDB349400D8A48A /* stop.png */; };
+		53239BD21BE0CE1E005952B6 /* Left_oneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53239BD11BE0CE1E005952B6 /* Left_oneTableViewCell.m */; };
+		53239C091BE0D29B005952B6 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53239BD51BE0D29B005952B6 /* UMSocialLocalizable.strings */; };
+		53239C0A1BE0D29B005952B6 /* libUMSocial_Sdk_4.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53239BE31BE0D29B005952B6 /* libUMSocial_Sdk_4.3.a */; };
+		53239C0B1BE0D29B005952B6 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BE51BE0D29B005952B6 /* UMSCommentDetailController.xib */; };
+		53239C0C1BE0D29B005952B6 /* UMSCommentInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BE61BE0D29B005952B6 /* UMSCommentInputController.xib */; };
+		53239C0D1BE0D29B005952B6 /* UMSCommentInputControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BE71BE0D29B005952B6 /* UMSCommentInputControlleriPad.xib */; };
+		53239C0E1BE0D29B005952B6 /* UMShareEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BE81BE0D29B005952B6 /* UMShareEditViewController.xib */; };
+		53239C0F1BE0D29B005952B6 /* UMShareEditViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BE91BE0D29B005952B6 /* UMShareEditViewControlleriPad.xib */; };
+		53239C101BE0D29B005952B6 /* UMSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BEA1BE0D29B005952B6 /* UMSLoginViewController.xib */; };
+		53239C111BE0D29B005952B6 /* UMSnsAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BEB1BE0D29B005952B6 /* UMSnsAccountViewController.xib */; };
+		53239C121BE0D29B005952B6 /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53239BEC1BE0D29B005952B6 /* UMSShareListController.xib */; };
+		53239C131BE0D29B005952B6 /* UMSocialSDKResourcesNew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53239BED1BE0D29B005952B6 /* UMSocialSDKResourcesNew.bundle */; };
+		53239C1C1BE0D29B005952B6 /* iOS-social-analytics-releasenote.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239BFD1BE0D29B005952B6 /* iOS-social-analytics-releasenote.html */; };
+		53239C1D1BE0D29B005952B6 /* iOS-social-releasenote.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239BFE1BE0D29B005952B6 /* iOS-social-releasenote.html */; };
+		53239C1E1BE0D29B005952B6 /* ios-social-sdk-comment-detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239BFF1BE0D29B005952B6 /* ios-social-sdk-comment-detail.html */; };
+		53239C1F1BE0D29B005952B6 /* ios-social-sdk-comment-quick.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C001BE0D29B005952B6 /* ios-social-sdk-comment-quick.html */; };
+		53239C201BE0D29B005952B6 /* ios-social-sdk-like.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C011BE0D29B005952B6 /* ios-social-sdk-like.html */; };
+		53239C211BE0D29B005952B6 /* ios-social-sdk-login-detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C021BE0D29B005952B6 /* ios-social-sdk-login-detail.html */; };
+		53239C221BE0D29B005952B6 /* ios-social-sdk-login-quick.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C031BE0D29B005952B6 /* ios-social-sdk-login-quick.html */; };
+		53239C231BE0D29B005952B6 /* ios-social-sdk-shake.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C041BE0D29B005952B6 /* ios-social-sdk-shake.html */; };
+		53239C241BE0D29B005952B6 /* ios-social-sdk-share-detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C051BE0D29B005952B6 /* ios-social-sdk-share-detail.html */; };
+		53239C251BE0D29B005952B6 /* ios-social-sdk-share-quick.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C061BE0D29B005952B6 /* ios-social-sdk-share-quick.html */; };
+		53239C261BE0D29B005952B6 /* ios-social-sdk-socialbar.html in Resources */ = {isa = PBXBuildFile; fileRef = 53239C071BE0D29B005952B6 /* ios-social-sdk-socialbar.html */; };
+		53239C271BE0D29B005952B6 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 53239C081BE0D29B005952B6 /* markdown.css */; };
 		537193041BD5C65A006B8CD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 537193031BD5C65A006B8CD1 /* main.m */; };
 		537193071BD5C65A006B8CD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 537193061BD5C65A006B8CD1 /* AppDelegate.m */; };
 		5371930D1BD5C65A006B8CD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5371930C1BD5C65A006B8CD1 /* ViewController.m */; };
@@ -101,43 +146,22 @@
 		5388D08F1BD7B21F0063C37E /* TWOCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D08E1BD7B21F0063C37E /* TWOCollectionViewCell.m */; };
 		5388D0921BD7B6090063C37E /* THIRDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D0911BD7B6090063C37E /* THIRDCollectionViewCell.m */; };
 		5388D0941BD7D0CD0063C37E /* Image.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0931BD7D0CD0063C37E /* Image.zip */; };
-		5388D0BB1BD7D0E50063C37E /* 1downloadSong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0961BD7D0E50063C37E /* 1downloadSong.png */; };
-		5388D0BC1BD7D0E50063C37E /* 1localSong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0971BD7D0E50063C37E /* 1localSong.png */; };
-		5388D0BD1BD7D0E50063C37E /* 2localSong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0981BD7D0E50063C37E /* 2localSong.png */; };
-		5388D0BE1BD7D0E50063C37E /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0991BD7D0E50063C37E /* 5.jpg */; };
 		5388D0BF1BD7D0E50063C37E /* backGroundBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D09A1BD7D0E50063C37E /* backGroundBlack.png */; };
 		5388D0C01BD7D0E50063C37E /* backGroundBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D09B1BD7D0E50063C37E /* backGroundBlue.png */; };
 		5388D0C11BD7D0E50063C37E /* backGroundWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D09C1BD7D0E50063C37E /* backGroundWhite.png */; };
-		5388D0C21BD7D0E50063C37E /* backGroundWhite副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D09D1BD7D0E50063C37E /* backGroundWhite副本.png */; };
-		5388D0C31BD7D0E50063C37E /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D09E1BD7D0E50063C37E /* backImage.png */; };
-		5388D0C41BD7D0E50063C37E /* backImage副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D09F1BD7D0E50063C37E /* backImage副本.png */; };
 		5388D0C51BD7D0E50063C37E /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A01BD7D0E50063C37E /* delete.png */; };
 		5388D0C61BD7D0E50063C37E /* deleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A11BD7D0E50063C37E /* deleteButton.png */; };
 		5388D0C71BD7D0E50063C37E /* disk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A21BD7D0E50063C37E /* disk.png */; };
-		5388D0C81BD7D0E50063C37E /* downloadSong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A31BD7D0E50063C37E /* downloadSong.png */; };
 		5388D0C91BD7D0E50063C37E /* findSinger.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A41BD7D0E50063C37E /* findSinger.png */; };
 		5388D0CA1BD7D0E50063C37E /* findSong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A51BD7D0E50063C37E /* findSong.png */; };
-		5388D0CB1BD7D0E50063C37E /* findTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A61BD7D0E50063C37E /* findTop.png */; };
 		5388D0CC1BD7D0E50063C37E /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A71BD7D0E50063C37E /* goback.png */; };
 		5388D0CD1BD7D0E50063C37E /* lastButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A81BD7D0E50063C37E /* lastButton.png */; };
 		5388D0CE1BD7D0E50063C37E /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0A91BD7D0E50063C37E /* list.png */; };
-		5388D0CF1BD7D0E50063C37E /* localSong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0AA1BD7D0E50063C37E /* localSong.png */; };
 		5388D0D01BD7D0E50063C37E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0AB1BD7D0E50063C37E /* logo.png */; };
 		5388D0D11BD7D0E50063C37E /* nextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0AC1BD7D0E50063C37E /* nextButton.png */; };
 		5388D0D21BD7D0E50063C37E /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0AD1BD7D0E50063C37E /* playButton.png */; };
-		5388D0D31BD7D0E50063C37E /* recommend1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0AE1BD7D0E50063C37E /* recommend1.png */; };
-		5388D0D41BD7D0E50063C37E /* recommend2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0AF1BD7D0E50063C37E /* recommend2.png */; };
-		5388D0D51BD7D0E50063C37E /* recommend3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B01BD7D0E50063C37E /* recommend3.png */; };
-		5388D0D61BD7D0E50063C37E /* recommend4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B11BD7D0E50063C37E /* recommend4.png */; };
-		5388D0D71BD7D0E50063C37E /* recommend5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B21BD7D0E50063C37E /* recommend5.png */; };
 		5388D0D81BD7D0E50063C37E /* sidebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B31BD7D0E50063C37E /* sidebar.png */; };
-		5388D0D91BD7D0E50063C37E /* songsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B41BD7D0E50063C37E /* songsButton.png */; };
 		5388D0DA1BD7D0E50063C37E /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B51BD7D0E50063C37E /* stopButton.png */; };
-		5388D0DB1BD7D0E50063C37E /* wheel0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B61BD7D0E50063C37E /* wheel0.png */; };
-		5388D0DC1BD7D0E50063C37E /* wheel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B71BD7D0E50063C37E /* wheel1.png */; };
-		5388D0DD1BD7D0E50063C37E /* zhang.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B81BD7D0E50063C37E /* zhang.png */; };
-		5388D0DE1BD7D0E50063C37E /* 惊蛰.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0B91BD7D0E50063C37E /* 惊蛰.jpg */; };
-		5388D0DF1BD7D0E50063C37E /* 背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388D0BA1BD7D0E50063C37E /* 背景.png */; };
 		5388D0E21BD7D7D00063C37E /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D0E11BD7D7D00063C37E /* RadioViewController.m */; };
 		5388D0E51BD7DCA10063C37E /* RedioCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D0E41BD7DCA10063C37E /* RedioCollectionViewCell.m */; };
 		5388D0E81BD7DD5C0063C37E /* RedioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D0E71BD7DD5C0063C37E /* RedioModel.m */; };
@@ -148,10 +172,18 @@
 		5388D0FB1BD885BC0063C37E /* SongListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D0FA1BD885BC0063C37E /* SongListModel.m */; };
 		5388D0FE1BD889600063C37E /* SongListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D0FD1BD889600063C37E /* SongListCollectionViewController.m */; };
 		5388D1011BD895F60063C37E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5388D1001BD895F60063C37E /* RootViewController.m */; };
-		538C0FE41BDA599C00487592 /* SongTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C0FE21BDA599C00487592 /* SongTableViewCell.m */; };
-		538C0FE51BDA599C00487592 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538C0FE31BDA599C00487592 /* SongTableViewCell.xib */; };
 		53A01C211BD8DF6E00341CE9 /* MusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A01C201BD8DF6E00341CE9 /* MusicPlayViewController.m */; };
 		53A01C271BD8E44A00341CE9 /* MusicPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A01C261BD8E44A00341CE9 /* MusicPlayerController.m */; };
+		53B7D9C21BE0AC6F00BD909A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9C11BE0AC6F00BD909A /* SystemConfiguration.framework */; };
+		53B7D9C41BE0ACDB00BD909A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9C31BE0ACDB00BD909A /* Security.framework */; };
+		53B7D9C61BE0ACEA00BD909A /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9C51BE0ACEA00BD909A /* libiconv.dylib */; };
+		53B7D9C81BE0ACF400BD909A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9C71BE0ACF400BD909A /* CoreGraphics.framework */; };
+		53B7D9CA1BE0AD0200BD909A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9C91BE0AD0200BD909A /* libsqlite3.dylib */; };
+		53B7D9CC1BE0AD1000BD909A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9CB1BE0AD1000BD909A /* CoreTelephony.framework */; };
+		53B7D9CE1BE0AD1B00BD909A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9CD1BE0AD1B00BD909A /* libstdc++.dylib */; };
+		53B7D9D01BE0AD2500BD909A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B7D9CF1BE0AD2500BD909A /* libz.dylib */; };
+		53B7DA601BE0C44600BD909A /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B7DA5F1BE0C44600BD909A /* LeftViewController.m */; };
+		53B7DA631BE0C46D00BD909A /* WindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B7DA621BE0C46D00BD909A /* WindowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +239,27 @@
 		5316DF331BD7704500B5CF47 /* OneCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneCollectionViewCell.m; sourceTree = "<group>"; };
 		5316DF351BD7769800B5CF47 /* TwoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoCollectionViewCell.h; sourceTree = "<group>"; };
 		5316DF361BD7769800B5CF47 /* TwoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoCollectionViewCell.m; sourceTree = "<group>"; };
+		5318D2001BE214CC00B5C06C /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		5318D2011BE214CC00B5C06C /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		5318D2021BE214CC00B5C06C /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		5318D2031BE214CC00B5C06C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		5318D2041BE214CC00B5C06C /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		5318D2051BE214CC00B5C06C /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		5318D2061BE214CC00B5C06C /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		5318D2071BE214CC00B5C06C /* Icon-76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@3x.png"; sourceTree = "<group>"; };
+		5318D2081BE214CC00B5C06C /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		5318D2091BE214CC00B5C06C /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		5318D20A1BE214CC00B5C06C /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		5318D20B1BE214CC00B5C06C /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		5318D20C1BE214CC00B5C06C /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		5318D20D1BE214CC00B5C06C /* Icon-Spotlight-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40.png"; sourceTree = "<group>"; };
+		5318D20E1BE214CC00B5C06C /* Icon-Spotlight-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@2x.png"; sourceTree = "<group>"; };
+		5318D20F1BE214CC00B5C06C /* Icon-Spotlight-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@3x.png"; sourceTree = "<group>"; };
+		5318D2101BE214CC00B5C06C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5318D2111BE214CC00B5C06C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		5318D2121BE214CC00B5C06C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		5318D2131BE214CC00B5C06C /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		5318D2281BE21D6900B5C06C /* agreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = agreement.html; path = ../agreement.html; sourceTree = "<group>"; };
 		5319DA061BDB349400D8A48A /* AudioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioButton.h; sourceTree = "<group>"; };
 		5319DA071BDB349400D8A48A /* AudioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioButton.m; sourceTree = "<group>"; };
 		5319DA081BDB349400D8A48A /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
@@ -217,6 +270,43 @@
 		5319DA0E1BDB349400D8A48A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		5319DA0F1BDB349400D8A48A /* screenshots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshots.png; sourceTree = "<group>"; };
 		5319DA101BDB349400D8A48A /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		53239BD01BE0CE1E005952B6 /* Left_oneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Left_oneTableViewCell.h; sourceTree = "<group>"; };
+		53239BD11BE0CE1E005952B6 /* Left_oneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Left_oneTableViewCell.m; sourceTree = "<group>"; };
+		53239BD61BE0D29B005952B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
+		53239BD81BE0D29B005952B6 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
+		53239BD91BE0D29B005952B6 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
+		53239BDA1BE0D29B005952B6 /* UMSocialBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialBar.h; sourceTree = "<group>"; };
+		53239BDB1BE0D29B005952B6 /* UMSocialConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialConfig.h; sourceTree = "<group>"; };
+		53239BDC1BE0D29B005952B6 /* UMSocialControllerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerService.h; sourceTree = "<group>"; };
+		53239BDD1BE0D29B005952B6 /* UMSocialControllerServiceComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerServiceComment.h; sourceTree = "<group>"; };
+		53239BDE1BE0D29B005952B6 /* UMSocialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialData.h; sourceTree = "<group>"; };
+		53239BDF1BE0D29B005952B6 /* UMSocialDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialDataService.h; sourceTree = "<group>"; };
+		53239BE01BE0D29B005952B6 /* UMSocialSnsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsData.h; sourceTree = "<group>"; };
+		53239BE11BE0D29B005952B6 /* UMSocialSnsPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsPlatformManager.h; sourceTree = "<group>"; };
+		53239BE21BE0D29B005952B6 /* UMSocialSnsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsService.h; sourceTree = "<group>"; };
+		53239BE31BE0D29B005952B6 /* libUMSocial_Sdk_4.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_4.3.a; sourceTree = "<group>"; };
+		53239BE51BE0D29B005952B6 /* UMSCommentDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentDetailController.xib; sourceTree = "<group>"; };
+		53239BE61BE0D29B005952B6 /* UMSCommentInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputController.xib; sourceTree = "<group>"; };
+		53239BE71BE0D29B005952B6 /* UMSCommentInputControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputControlleriPad.xib; sourceTree = "<group>"; };
+		53239BE81BE0D29B005952B6 /* UMShareEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewController.xib; sourceTree = "<group>"; };
+		53239BE91BE0D29B005952B6 /* UMShareEditViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewControlleriPad.xib; sourceTree = "<group>"; };
+		53239BEA1BE0D29B005952B6 /* UMSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSLoginViewController.xib; sourceTree = "<group>"; };
+		53239BEB1BE0D29B005952B6 /* UMSnsAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSnsAccountViewController.xib; sourceTree = "<group>"; };
+		53239BEC1BE0D29B005952B6 /* UMSShareListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSShareListController.xib; sourceTree = "<group>"; };
+		53239BED1BE0D29B005952B6 /* UMSocialSDKResourcesNew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResourcesNew.bundle; sourceTree = "<group>"; };
+		53239BEE1BE0D29B005952B6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMSocialLocalizable.strings"; sourceTree = "<group>"; };
+		53239BFD1BE0D29B005952B6 /* iOS-social-analytics-releasenote.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "iOS-social-analytics-releasenote.html"; sourceTree = "<group>"; };
+		53239BFE1BE0D29B005952B6 /* iOS-social-releasenote.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "iOS-social-releasenote.html"; sourceTree = "<group>"; };
+		53239BFF1BE0D29B005952B6 /* ios-social-sdk-comment-detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-comment-detail.html"; sourceTree = "<group>"; };
+		53239C001BE0D29B005952B6 /* ios-social-sdk-comment-quick.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-comment-quick.html"; sourceTree = "<group>"; };
+		53239C011BE0D29B005952B6 /* ios-social-sdk-like.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-like.html"; sourceTree = "<group>"; };
+		53239C021BE0D29B005952B6 /* ios-social-sdk-login-detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-login-detail.html"; sourceTree = "<group>"; };
+		53239C031BE0D29B005952B6 /* ios-social-sdk-login-quick.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-login-quick.html"; sourceTree = "<group>"; };
+		53239C041BE0D29B005952B6 /* ios-social-sdk-shake.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-shake.html"; sourceTree = "<group>"; };
+		53239C051BE0D29B005952B6 /* ios-social-sdk-share-detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-share-detail.html"; sourceTree = "<group>"; };
+		53239C061BE0D29B005952B6 /* ios-social-sdk-share-quick.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-share-quick.html"; sourceTree = "<group>"; };
+		53239C071BE0D29B005952B6 /* ios-social-sdk-socialbar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-socialbar.html"; sourceTree = "<group>"; };
+		53239C081BE0D29B005952B6 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
 		537192FE1BD5C65A006B8CD1 /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537193021BD5C65A006B8CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		537193031BD5C65A006B8CD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -339,43 +429,22 @@
 		5388D0901BD7B6090063C37E /* THIRDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THIRDCollectionViewCell.h; sourceTree = "<group>"; };
 		5388D0911BD7B6090063C37E /* THIRDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THIRDCollectionViewCell.m; sourceTree = "<group>"; };
 		5388D0931BD7D0CD0063C37E /* Image.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Image.zip; sourceTree = "<group>"; };
-		5388D0961BD7D0E50063C37E /* 1downloadSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1downloadSong.png; sourceTree = "<group>"; };
-		5388D0971BD7D0E50063C37E /* 1localSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1localSong.png; sourceTree = "<group>"; };
-		5388D0981BD7D0E50063C37E /* 2localSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2localSong.png; sourceTree = "<group>"; };
-		5388D0991BD7D0E50063C37E /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		5388D09A1BD7D0E50063C37E /* backGroundBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundBlack.png; sourceTree = "<group>"; };
 		5388D09B1BD7D0E50063C37E /* backGroundBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundBlue.png; sourceTree = "<group>"; };
 		5388D09C1BD7D0E50063C37E /* backGroundWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundWhite.png; sourceTree = "<group>"; };
-		5388D09D1BD7D0E50063C37E /* backGroundWhite副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backGroundWhite副本.png"; sourceTree = "<group>"; };
-		5388D09E1BD7D0E50063C37E /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
-		5388D09F1BD7D0E50063C37E /* backImage副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage副本.png"; sourceTree = "<group>"; };
 		5388D0A01BD7D0E50063C37E /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		5388D0A11BD7D0E50063C37E /* deleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteButton.png; sourceTree = "<group>"; };
 		5388D0A21BD7D0E50063C37E /* disk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disk.png; sourceTree = "<group>"; };
-		5388D0A31BD7D0E50063C37E /* downloadSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downloadSong.png; sourceTree = "<group>"; };
 		5388D0A41BD7D0E50063C37E /* findSinger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findSinger.png; sourceTree = "<group>"; };
 		5388D0A51BD7D0E50063C37E /* findSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findSong.png; sourceTree = "<group>"; };
-		5388D0A61BD7D0E50063C37E /* findTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findTop.png; sourceTree = "<group>"; };
 		5388D0A71BD7D0E50063C37E /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
 		5388D0A81BD7D0E50063C37E /* lastButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lastButton.png; sourceTree = "<group>"; };
 		5388D0A91BD7D0E50063C37E /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
-		5388D0AA1BD7D0E50063C37E /* localSong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = localSong.png; sourceTree = "<group>"; };
 		5388D0AB1BD7D0E50063C37E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		5388D0AC1BD7D0E50063C37E /* nextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextButton.png; sourceTree = "<group>"; };
 		5388D0AD1BD7D0E50063C37E /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
-		5388D0AE1BD7D0E50063C37E /* recommend1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommend1.png; sourceTree = "<group>"; };
-		5388D0AF1BD7D0E50063C37E /* recommend2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommend2.png; sourceTree = "<group>"; };
-		5388D0B01BD7D0E50063C37E /* recommend3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommend3.png; sourceTree = "<group>"; };
-		5388D0B11BD7D0E50063C37E /* recommend4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommend4.png; sourceTree = "<group>"; };
-		5388D0B21BD7D0E50063C37E /* recommend5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommend5.png; sourceTree = "<group>"; };
 		5388D0B31BD7D0E50063C37E /* sidebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidebar.png; sourceTree = "<group>"; };
-		5388D0B41BD7D0E50063C37E /* songsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = songsButton.png; sourceTree = "<group>"; };
 		5388D0B51BD7D0E50063C37E /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
-		5388D0B61BD7D0E50063C37E /* wheel0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel0.png; sourceTree = "<group>"; };
-		5388D0B71BD7D0E50063C37E /* wheel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel1.png; sourceTree = "<group>"; };
-		5388D0B81BD7D0E50063C37E /* zhang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhang.png; sourceTree = "<group>"; };
-		5388D0B91BD7D0E50063C37E /* 惊蛰.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "惊蛰.jpg"; sourceTree = "<group>"; };
-		5388D0BA1BD7D0E50063C37E /* 背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景.png"; sourceTree = "<group>"; };
 		5388D0E01BD7D7D00063C37E /* RadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
 		5388D0E11BD7D7D00063C37E /* RadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioViewController.m; sourceTree = "<group>"; };
 		5388D0E31BD7DCA10063C37E /* RedioCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedioCollectionViewCell.h; sourceTree = "<group>"; };
@@ -396,13 +465,22 @@
 		5388D0FD1BD889600063C37E /* SongListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListCollectionViewController.m; sourceTree = "<group>"; };
 		5388D0FF1BD895F60063C37E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		5388D1001BD895F60063C37E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		538C0FE11BDA599C00487592 /* SongTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongTableViewCell.h; sourceTree = "<group>"; };
-		538C0FE21BDA599C00487592 /* SongTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongTableViewCell.m; sourceTree = "<group>"; };
-		538C0FE31BDA599C00487592 /* SongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
 		53A01C1F1BD8DF6E00341CE9 /* MusicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayViewController.h; sourceTree = "<group>"; };
 		53A01C201BD8DF6E00341CE9 /* MusicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayViewController.m; sourceTree = "<group>"; };
 		53A01C251BD8E44A00341CE9 /* MusicPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerController.h; sourceTree = "<group>"; };
 		53A01C261BD8E44A00341CE9 /* MusicPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerController.m; sourceTree = "<group>"; };
+		53B7D9C11BE0AC6F00BD909A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		53B7D9C31BE0ACDB00BD909A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		53B7D9C51BE0ACEA00BD909A /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		53B7D9C71BE0ACF400BD909A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53B7D9C91BE0AD0200BD909A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		53B7D9CB1BE0AD1000BD909A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		53B7D9CD1BE0AD1B00BD909A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		53B7D9CF1BE0AD2500BD909A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		53B7DA5E1BE0C44600BD909A /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		53B7DA5F1BE0C44600BD909A /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		53B7DA611BE0C46D00BD909A /* WindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowViewController.h; sourceTree = "<group>"; };
+		53B7DA621BE0C46D00BD909A /* WindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +488,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53239C0A1BE0D29B005952B6 /* libUMSocial_Sdk_4.3.a in Frameworks */,
+				53B7D9D01BE0AD2500BD909A /* libz.dylib in Frameworks */,
+				53B7D9CE1BE0AD1B00BD909A /* libstdc++.dylib in Frameworks */,
+				53B7D9CC1BE0AD1000BD909A /* CoreTelephony.framework in Frameworks */,
+				53B7D9CA1BE0AD0200BD909A /* libsqlite3.dylib in Frameworks */,
+				53B7D9C81BE0ACF400BD909A /* CoreGraphics.framework in Frameworks */,
+				53B7D9C61BE0ACEA00BD909A /* libiconv.dylib in Frameworks */,
+				53B7D9C41BE0ACDB00BD909A /* Security.framework in Frameworks */,
+				53B7D9C21BE0AC6F00BD909A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +536,33 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		5318D1FF1BE214CC00B5C06C /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				5318D2001BE214CC00B5C06C /* Icon-60.png */,
+				5318D2011BE214CC00B5C06C /* Icon-60@2x.png */,
+				5318D2021BE214CC00B5C06C /* Icon-60@3x.png */,
+				5318D2031BE214CC00B5C06C /* Icon-72.png */,
+				5318D2041BE214CC00B5C06C /* Icon-72@2x.png */,
+				5318D2051BE214CC00B5C06C /* Icon-76.png */,
+				5318D2061BE214CC00B5C06C /* Icon-76@2x.png */,
+				5318D2071BE214CC00B5C06C /* Icon-76@3x.png */,
+				5318D2081BE214CC00B5C06C /* Icon-Small-50.png */,
+				5318D2091BE214CC00B5C06C /* Icon-Small-50@2x.png */,
+				5318D20A1BE214CC00B5C06C /* Icon-Small.png */,
+				5318D20B1BE214CC00B5C06C /* Icon-Small@2x.png */,
+				5318D20C1BE214CC00B5C06C /* Icon-Small@3x.png */,
+				5318D20D1BE214CC00B5C06C /* Icon-Spotlight-40.png */,
+				5318D20E1BE214CC00B5C06C /* Icon-Spotlight-40@2x.png */,
+				5318D20F1BE214CC00B5C06C /* Icon-Spotlight-40@3x.png */,
+				5318D2101BE214CC00B5C06C /* Icon.png */,
+				5318D2111BE214CC00B5C06C /* Icon@2x.png */,
+				5318D2121BE214CC00B5C06C /* iTunesArtwork */,
+				5318D2131BE214CC00B5C06C /* iTunesArtwork@2x */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
 		5319DA051BDB349400D8A48A /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,9 +588,90 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		53239BD31BE0D29B005952B6 /* umeng_ios_social_sdk_4.3_arm64_custom */ = {
+			isa = PBXGroup;
+			children = (
+				53239BD41BE0D29B005952B6 /* UMSocial_Sdk_4.3 */,
+				53239BFC1BE0D29B005952B6 /* UMSocial_Sdk_Instructions */,
+			);
+			path = umeng_ios_social_sdk_4.3_arm64_custom;
+			sourceTree = "<group>";
+		};
+		53239BD41BE0D29B005952B6 /* UMSocial_Sdk_4.3 */ = {
+			isa = PBXGroup;
+			children = (
+				53239BD51BE0D29B005952B6 /* UMSocialLocalizable.strings */,
+				53239BD71BE0D29B005952B6 /* Header */,
+				53239BE31BE0D29B005952B6 /* libUMSocial_Sdk_4.3.a */,
+				53239BE41BE0D29B005952B6 /* SocialSDKXib */,
+				53239BED1BE0D29B005952B6 /* UMSocialSDKResourcesNew.bundle */,
+			);
+			path = UMSocial_Sdk_4.3;
+			sourceTree = "<group>";
+		};
+		53239BD71BE0D29B005952B6 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				53239BD81BE0D29B005952B6 /* UMSocial.h */,
+				53239BD91BE0D29B005952B6 /* UMSocialAccountManager.h */,
+				53239BDA1BE0D29B005952B6 /* UMSocialBar.h */,
+				53239BDB1BE0D29B005952B6 /* UMSocialConfig.h */,
+				53239BDC1BE0D29B005952B6 /* UMSocialControllerService.h */,
+				53239BDD1BE0D29B005952B6 /* UMSocialControllerServiceComment.h */,
+				53239BDE1BE0D29B005952B6 /* UMSocialData.h */,
+				53239BDF1BE0D29B005952B6 /* UMSocialDataService.h */,
+				53239BE01BE0D29B005952B6 /* UMSocialSnsData.h */,
+				53239BE11BE0D29B005952B6 /* UMSocialSnsPlatformManager.h */,
+				53239BE21BE0D29B005952B6 /* UMSocialSnsService.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		53239BE41BE0D29B005952B6 /* SocialSDKXib */ = {
+			isa = PBXGroup;
+			children = (
+				53239BE51BE0D29B005952B6 /* UMSCommentDetailController.xib */,
+				53239BE61BE0D29B005952B6 /* UMSCommentInputController.xib */,
+				53239BE71BE0D29B005952B6 /* UMSCommentInputControlleriPad.xib */,
+				53239BE81BE0D29B005952B6 /* UMShareEditViewController.xib */,
+				53239BE91BE0D29B005952B6 /* UMShareEditViewControlleriPad.xib */,
+				53239BEA1BE0D29B005952B6 /* UMSLoginViewController.xib */,
+				53239BEB1BE0D29B005952B6 /* UMSnsAccountViewController.xib */,
+				53239BEC1BE0D29B005952B6 /* UMSShareListController.xib */,
+			);
+			path = SocialSDKXib;
+			sourceTree = "<group>";
+		};
+		53239BFC1BE0D29B005952B6 /* UMSocial_Sdk_Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				53239BFD1BE0D29B005952B6 /* iOS-social-analytics-releasenote.html */,
+				53239BFE1BE0D29B005952B6 /* iOS-social-releasenote.html */,
+				53239BFF1BE0D29B005952B6 /* ios-social-sdk-comment-detail.html */,
+				53239C001BE0D29B005952B6 /* ios-social-sdk-comment-quick.html */,
+				53239C011BE0D29B005952B6 /* ios-social-sdk-like.html */,
+				53239C021BE0D29B005952B6 /* ios-social-sdk-login-detail.html */,
+				53239C031BE0D29B005952B6 /* ios-social-sdk-login-quick.html */,
+				53239C041BE0D29B005952B6 /* ios-social-sdk-shake.html */,
+				53239C051BE0D29B005952B6 /* ios-social-sdk-share-detail.html */,
+				53239C061BE0D29B005952B6 /* ios-social-sdk-share-quick.html */,
+				53239C071BE0D29B005952B6 /* ios-social-sdk-socialbar.html */,
+				53239C081BE0D29B005952B6 /* markdown.css */,
+			);
+			path = UMSocial_Sdk_Instructions;
+			sourceTree = "<group>";
+		};
 		537192F51BD5C65A006B8CD1 = {
 			isa = PBXGroup;
 			children = (
+				53B7D9CF1BE0AD2500BD909A /* libz.dylib */,
+				53B7D9CD1BE0AD1B00BD909A /* libstdc++.dylib */,
+				53B7D9CB1BE0AD1000BD909A /* CoreTelephony.framework */,
+				53B7D9C91BE0AD0200BD909A /* libsqlite3.dylib */,
+				53B7D9C71BE0ACF400BD909A /* CoreGraphics.framework */,
+				53B7D9C51BE0ACEA00BD909A /* libiconv.dylib */,
+				53B7D9C31BE0ACDB00BD909A /* Security.framework */,
+				53B7D9C11BE0AC6F00BD909A /* SystemConfiguration.framework */,
 				537193001BD5C65A006B8CD1 /* Music */,
 				5371931D1BD5C65A006B8CD1 /* MusicTests */,
 				537192FF1BD5C65A006B8CD1 /* Products */,
@@ -564,6 +759,8 @@
 		537194481BD5CF60006B8CD1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5318D2281BE21D6900B5C06C /* agreement.html */,
+				5318D1FF1BE214CC00B5C06C /* icon */,
 				5388D0951BD7D0E50063C37E /* Image */,
 				5388D0931BD7D0CD0063C37E /* Image.zip */,
 				537194DE1BD5CFDE006B8CD1 /* 接口 */,
@@ -600,6 +797,12 @@
 				53A01C201BD8DF6E00341CE9 /* MusicPlayViewController.m */,
 				53A01C251BD8E44A00341CE9 /* MusicPlayerController.h */,
 				53A01C261BD8E44A00341CE9 /* MusicPlayerController.m */,
+				53B7DA5E1BE0C44600BD909A /* LeftViewController.h */,
+				53B7DA5F1BE0C44600BD909A /* LeftViewController.m */,
+				53239BD01BE0CE1E005952B6 /* Left_oneTableViewCell.h */,
+				53239BD11BE0CE1E005952B6 /* Left_oneTableViewCell.m */,
+				53B7DA611BE0C46D00BD909A /* WindowViewController.h */,
+				53B7DA621BE0C46D00BD909A /* WindowViewController.m */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -677,9 +880,6 @@
 				5304C52E1BD9E0770070A7FE /* songListViewController.m */,
 				530CD6521BDB441800D48170 /* TableHeaderView.h */,
 				530CD6531BDB441800D48170 /* TableHeaderView.m */,
-				538C0FE11BDA599C00487592 /* SongTableViewCell.h */,
-				538C0FE21BDA599C00487592 /* SongTableViewCell.m */,
-				538C0FE31BDA599C00487592 /* SongTableViewCell.xib */,
 			);
 			path = songList;
 			sourceTree = "<group>";
@@ -700,6 +900,7 @@
 		537194F21BD5D4A9006B8CD1 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				53239BD31BE0D29B005952B6 /* umeng_ios_social_sdk_4.3_arm64_custom */,
 				530CD6351BDB3AFE00D48170 /* AFNetworking */,
 				5319DA051BDB349400D8A48A /* AudioPlayer */,
 				537195071BD5D4A9006B8CD1 /* MBProgressHUD */,
@@ -849,43 +1050,22 @@
 			isa = PBXGroup;
 			children = (
 				530CD6551BDB79F000D48170 /* musicTable@2x.png */,
-				5388D0961BD7D0E50063C37E /* 1downloadSong.png */,
-				5388D0971BD7D0E50063C37E /* 1localSong.png */,
-				5388D0981BD7D0E50063C37E /* 2localSong.png */,
-				5388D0991BD7D0E50063C37E /* 5.jpg */,
 				5388D09A1BD7D0E50063C37E /* backGroundBlack.png */,
 				5388D09B1BD7D0E50063C37E /* backGroundBlue.png */,
 				5388D09C1BD7D0E50063C37E /* backGroundWhite.png */,
-				5388D09D1BD7D0E50063C37E /* backGroundWhite副本.png */,
-				5388D09E1BD7D0E50063C37E /* backImage.png */,
-				5388D09F1BD7D0E50063C37E /* backImage副本.png */,
 				5388D0A01BD7D0E50063C37E /* delete.png */,
 				5388D0A11BD7D0E50063C37E /* deleteButton.png */,
 				5388D0A21BD7D0E50063C37E /* disk.png */,
-				5388D0A31BD7D0E50063C37E /* downloadSong.png */,
 				5388D0A41BD7D0E50063C37E /* findSinger.png */,
 				5388D0A51BD7D0E50063C37E /* findSong.png */,
-				5388D0A61BD7D0E50063C37E /* findTop.png */,
 				5388D0A71BD7D0E50063C37E /* goback.png */,
 				5388D0A81BD7D0E50063C37E /* lastButton.png */,
 				5388D0A91BD7D0E50063C37E /* list.png */,
-				5388D0AA1BD7D0E50063C37E /* localSong.png */,
 				5388D0AB1BD7D0E50063C37E /* logo.png */,
 				5388D0AC1BD7D0E50063C37E /* nextButton.png */,
 				5388D0AD1BD7D0E50063C37E /* playButton.png */,
-				5388D0AE1BD7D0E50063C37E /* recommend1.png */,
-				5388D0AF1BD7D0E50063C37E /* recommend2.png */,
-				5388D0B01BD7D0E50063C37E /* recommend3.png */,
-				5388D0B11BD7D0E50063C37E /* recommend4.png */,
-				5388D0B21BD7D0E50063C37E /* recommend5.png */,
 				5388D0B31BD7D0E50063C37E /* sidebar.png */,
-				5388D0B41BD7D0E50063C37E /* songsButton.png */,
 				5388D0B51BD7D0E50063C37E /* stopButton.png */,
-				5388D0B61BD7D0E50063C37E /* wheel0.png */,
-				5388D0B71BD7D0E50063C37E /* wheel1.png */,
-				5388D0B81BD7D0E50063C37E /* zhang.png */,
-				5388D0B91BD7D0E50063C37E /* 惊蛰.jpg */,
-				5388D0BA1BD7D0E50063C37E /* 背景.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -970,6 +1150,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 537192F51BD5C65A006B8CD1;
 			productRefGroup = 537192FF1BD5C65A006B8CD1 /* Products */;
@@ -987,62 +1168,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5388D0C81BD7D0E50063C37E /* downloadSong.png in Resources */,
 				5388D0C51BD7D0E50063C37E /* delete.png in Resources */,
-				5388D0D31BD7D0E50063C37E /* recommend1.png in Resources */,
+				5318D2261BE214CC00B5C06C /* iTunesArtwork in Resources */,
+				5318D21F1BE214CC00B5C06C /* Icon-Small@2x.png in Resources */,
 				537194EB1BD5CFDE006B8CD1 /* 推荐.txt in Resources */,
-				5388D0DD1BD7D0E50063C37E /* zhang.png in Resources */,
 				537194E81BD5CFDE006B8CD1 /* 发现---歌手.txt in Resources */,
-				5388D0C31BD7D0E50063C37E /* backImage.png in Resources */,
-				5388D0D61BD7D0E50063C37E /* recommend4.png in Resources */,
+				5318D2271BE214CC00B5C06C /* iTunesArtwork@2x in Resources */,
+				5318D2141BE214CC00B5C06C /* Icon-60.png in Resources */,
+				5318D21D1BE214CC00B5C06C /* Icon-Small-50@2x.png in Resources */,
 				5388D0D21BD7D0E50063C37E /* playButton.png in Resources */,
 				537194E61BD5CFDE006B8CD1 /* 发现---排行榜.txt in Resources */,
-				5388D0D41BD7D0E50063C37E /* recommend2.png in Resources */,
-				5388D0BC1BD7D0E50063C37E /* 1localSong.png in Resources */,
+				5318D2201BE214CC00B5C06C /* Icon-Small@3x.png in Resources */,
+				53239C221BE0D29B005952B6 /* ios-social-sdk-login-quick.html in Resources */,
 				5319DA141BDB349400D8A48A /* loading.png in Resources */,
 				537194EA1BD5CFDE006B8CD1 /* 天天动听---发现页面.txt in Resources */,
-				5388D0BD1BD7D0E50063C37E /* 2localSong.png in Resources */,
+				5318D2181BE214CC00B5C06C /* Icon-72@2x.png in Resources */,
+				53239C241BE0D29B005952B6 /* ios-social-sdk-share-detail.html in Resources */,
+				53239C0B1BE0D29B005952B6 /* UMSCommentDetailController.xib in Resources */,
 				5388D0941BD7D0CD0063C37E /* Image.zip in Resources */,
-				5388D0CF1BD7D0E50063C37E /* localSong.png in Resources */,
-				5388D0D51BD7D0E50063C37E /* recommend3.png in Resources */,
+				53239C261BE0D29B005952B6 /* ios-social-sdk-socialbar.html in Resources */,
+				53239C1C1BE0D29B005952B6 /* iOS-social-analytics-releasenote.html in Resources */,
+				53239C1E1BE0D29B005952B6 /* ios-social-sdk-comment-detail.html in Resources */,
 				5388D0D81BD7D0E50063C37E /* sidebar.png in Resources */,
 				5388D0D01BD7D0E50063C37E /* logo.png in Resources */,
-				5388D0DB1BD7D0E50063C37E /* wheel0.png in Resources */,
 				5388D0D11BD7D0E50063C37E /* nextButton.png in Resources */,
 				5388D0C91BD7D0E50063C37E /* findSinger.png in Resources */,
+				5318D2171BE214CC00B5C06C /* Icon-72.png in Resources */,
+				53239C0F1BE0D29B005952B6 /* UMShareEditViewControlleriPad.xib in Resources */,
+				5318D2291BE21D6900B5C06C /* agreement.html in Resources */,
 				530CD6561BDB79F000D48170 /* musicTable@2x.png in Resources */,
 				5388D0511BD787640063C37E /* OneHomeTestCollectionViewCell.xib in Resources */,
-				5388D0BE1BD7D0E50063C37E /* 5.jpg in Resources */,
-				538C0FE51BDA599C00487592 /* SongTableViewCell.xib in Resources */,
 				537193101BD5C65A006B8CD1 /* Main.storyboard in Resources */,
+				5318D21A1BE214CC00B5C06C /* Icon-76@2x.png in Resources */,
 				5388D0C71BD7D0E50063C37E /* disk.png in Resources */,
 				5388D0DA1BD7D0E50063C37E /* stopButton.png in Resources */,
 				537194EC1BD5CFDE006B8CD1 /* 搜索.txt in Resources */,
 				5388D0BF1BD7D0E50063C37E /* backGroundBlack.png in Resources */,
 				5388D0CD1BD7D0E50063C37E /* lastButton.png in Resources */,
-				5388D0D71BD7D0E50063C37E /* recommend5.png in Resources */,
-				5388D0D91BD7D0E50063C37E /* songsButton.png in Resources */,
+				53239C111BE0D29B005952B6 /* UMSnsAccountViewController.xib in Resources */,
+				53239C091BE0D29B005952B6 /* UMSocialLocalizable.strings in Resources */,
 				537193151BD5C65A006B8CD1 /* LaunchScreen.xib in Resources */,
-				5388D0C21BD7D0E50063C37E /* backGroundWhite副本.png in Resources */,
+				53239C101BE0D29B005952B6 /* UMSLoginViewController.xib in Resources */,
+				5318D2151BE214CC00B5C06C /* Icon-60@2x.png in Resources */,
+				53239C0D1BE0D29B005952B6 /* UMSCommentInputControlleriPad.xib in Resources */,
+				53239C0C1BE0D29B005952B6 /* UMSCommentInputController.xib in Resources */,
 				5388D0CE1BD7D0E50063C37E /* list.png in Resources */,
+				5318D2221BE214CC00B5C06C /* Icon-Spotlight-40@2x.png in Resources */,
 				537195611BD5D4A9006B8CD1 /* MJRefresh.bundle in Resources */,
+				53239C1D1BE0D29B005952B6 /* iOS-social-releasenote.html in Resources */,
+				5318D21C1BE214CC00B5C06C /* Icon-Small-50.png in Resources */,
 				5388D0C61BD7D0E50063C37E /* deleteButton.png in Resources */,
 				5319DA161BDB349400D8A48A /* screenshots.png in Resources */,
+				53239C0E1BE0D29B005952B6 /* UMShareEditViewController.xib in Resources */,
+				53239C1F1BE0D29B005952B6 /* ios-social-sdk-comment-quick.html in Resources */,
 				537194E71BD5CFDE006B8CD1 /* 发现---歌单.txt in Resources */,
-				5388D0CB1BD7D0E50063C37E /* findTop.png in Resources */,
+				5318D2241BE214CC00B5C06C /* Icon.png in Resources */,
+				5318D2161BE214CC00B5C06C /* Icon-60@3x.png in Resources */,
 				5388D0C11BD7D0E50063C37E /* backGroundWhite.png in Resources */,
-				5388D0DF1BD7D0E50063C37E /* 背景.png in Resources */,
+				5318D2211BE214CC00B5C06C /* Icon-Spotlight-40.png in Resources */,
+				5318D21E1BE214CC00B5C06C /* Icon-Small.png in Resources */,
+				53239C121BE0D29B005952B6 /* UMSShareListController.xib in Resources */,
 				5388D0C01BD7D0E50063C37E /* backGroundBlue.png in Resources */,
+				5318D2231BE214CC00B5C06C /* Icon-Spotlight-40@3x.png in Resources */,
+				53239C251BE0D29B005952B6 /* ios-social-sdk-share-quick.html in Resources */,
+				53239C211BE0D29B005952B6 /* ios-social-sdk-login-detail.html in Resources */,
 				5388D0CA1BD7D0E50063C37E /* findSong.png in Resources */,
+				5318D2191BE214CC00B5C06C /* Icon-76.png in Resources */,
+				5318D2251BE214CC00B5C06C /* Icon@2x.png in Resources */,
 				5319DA171BDB349400D8A48A /* stop.png in Resources */,
+				5318D21B1BE214CC00B5C06C /* Icon-76@3x.png in Resources */,
 				5319DA151BDB349400D8A48A /* play.png in Resources */,
-				5388D0DE1BD7D0E50063C37E /* 惊蛰.jpg in Resources */,
+				53239C201BE0D29B005952B6 /* ios-social-sdk-like.html in Resources */,
 				537194E91BD5CFDE006B8CD1 /* 发现---电台.txt in Resources */,
-				5388D0BB1BD7D0E50063C37E /* 1downloadSong.png in Resources */,
-				5388D0C41BD7D0E50063C37E /* backImage副本.png in Resources */,
 				537193121BD5C65A006B8CD1 /* Images.xcassets in Resources */,
-				5388D0DC1BD7D0E50063C37E /* wheel1.png in Resources */,
+				53239C231BE0D29B005952B6 /* ios-social-sdk-shake.html in Resources */,
 				5388D0CC1BD7D0E50063C37E /* goback.png in Resources */,
+				53239C131BE0D29B005952B6 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				53239C271BE0D29B005952B6 /* markdown.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1100,8 +1302,8 @@
 				5387D1951BDDD04B0077D5EC /* Music.m in Sources */,
 				5371930D1BD5C65A006B8CD1 /* ViewController.m in Sources */,
 				530CD64C1BDB3AFE00D48170 /* AFNetworkReachabilityManager.m in Sources */,
-				538C0FE41BDA599C00487592 /* SongTableViewCell.m in Sources */,
 				537195631BD5D4A9006B8CD1 /* MJRefreshConst.m in Sources */,
+				53B7DA601BE0C44600BD909A /* LeftViewController.m in Sources */,
 				5319DA131BDB349400D8A48A /* AudioStreamer.m in Sources */,
 				5371956E1BD5D4A9006B8CD1 /* TAAbstractDotView.m in Sources */,
 				5388D0921BD7B6090063C37E /* THIRDCollectionViewCell.m in Sources */,
@@ -1112,8 +1314,10 @@
 				537195831BD5D4A9006B8CD1 /* UIImageView+WebCache.m in Sources */,
 				537195711BD5D4A9006B8CD1 /* TAPageControl.m in Sources */,
 				5371959F1BD654C6006B8CD1 /* MusicModel.m in Sources */,
+				53B7DA631BE0C46D00BD909A /* WindowViewController.m in Sources */,
 				530CD6511BDB3AFE00D48170 /* AFURLSessionManager.m in Sources */,
 				5388D0EF1BD87B770063C37E /* SingerCollectionViewCell.m in Sources */,
+				53239BD21BE0CE1E005952B6 /* Left_oneTableViewCell.m in Sources */,
 				5316DF2C1BD7662F00B5CF47 /* TopHomeCollectionReusableView.m in Sources */,
 				537195771BD5D4A9006B8CD1 /* SDImageCache.m in Sources */,
 				537195691BD5D4A9006B8CD1 /* MJRefreshLegendHeader.m in Sources */,
@@ -1170,6 +1374,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		53239BD51BE0D29B005952B6 /* UMSocialLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53239BD61BE0D29B005952B6 /* en */,
+				53239BEE1BE0D29B005952B6 /* zh-Hans */,
+			);
+			name = UMSocialLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		5371930E1BD5C65A006B8CD1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1269,9 +1482,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: cai ZheYong (EEQZNWW6WZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: cai ZheYong (EEQZNWW6WZ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Facebook,
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Twitter,
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Facebook",
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Twitter",
+				);
 				INFOPLIST_FILE = Music/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_4.3",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_4.3,
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Facebook,
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Twitter,
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_4.3",
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Facebook",
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Twitter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "89768264-ad6e-4000-9828-3003e4085af2";
 			};
 			name = Debug;
 		};
@@ -1279,9 +1521,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: cai ZheYong (EEQZNWW6WZ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Facebook,
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Twitter,
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Facebook",
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Twitter",
+				);
 				INFOPLIST_FILE = Music/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_4.3",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_4.3,
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Facebook,
+					"$(PROJECT_DIR)/Music/umeng_ios_social_sdk_4.3_arm64_custom",
+					2/UMSocial_Sdk_Extra_Frameworks/Twitter,
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_4.3",
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Facebook",
+					"$(PROJECT_DIR)/Music/Vendors/umeng_ios_social_sdk_4.3_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Twitter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "89768264-ad6e-4000-9828-3003e4085af2";
 			};
 			name = Release;
 		};

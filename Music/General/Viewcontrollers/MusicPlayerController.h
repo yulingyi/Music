@@ -21,6 +21,6 @@
 @property (nonatomic, strong) AFHTTPRequestOperationManager *manger;
 + (MusicPlayerController *)shareMusicPlayerController;
 - (void)downLoadMusic:(MusicModel *)music;
-- (void)collection:(MusicModel *)musicModel;
+- (BOOL)collection:(MusicModel *)musicModel;
 - (void)removeFromSQLWith:(MusicModel *)musicModel;
 @end

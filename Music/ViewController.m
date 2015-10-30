@@ -30,6 +30,32 @@
 
 @implementation ViewController
 
+- (IBAction)openLeftVC:(UIBarButtonItem *)sender {
+    
+    [UIView animateWithDuration:.5 animations:^{
+       
+        if (self.navigationController.parentViewController.view.frame.origin.x == 0) {
+            
+     
+        self.navigationController.parentViewController.view.frame = CGRectMake(self.view.frame.size.width / 3 * 2, 0, self.view.frame.size.width, self.view.frame.size.height);
+        
+        }else
+        {
+             self.navigationController.parentViewController.view.frame = CGRectMake(0 , 0, self.view.frame.size.width, self.view.frame.size.height);
+        }
+        
+    }];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if ([self.dataSource allKeys].count == 0) {
+        [self getDataSourceFromServer];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -59,12 +85,42 @@
     [manager GET:urlStr parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         
+        NSString * cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+        
+        NSString *filePath = [cachePath stringByAppendingPathComponent:@"homeData.txt"];
+        
+        NSLog(@"%@", filePath);
+        
+        
+       
+        [NSKeyedArchiver archiveRootObject:responseObject toFile:filePath];
+//        if(success){
+//            NSLog(@"保存成功");
+//        }
+        
         [myType handleData:responseObject];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        NSLog(@"%@", error);
         
+        NSString * cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+        
+        NSString *filePath = [cachePath stringByAppendingPathComponent:@"homeData.txt"];
+        
+     
+        id array = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+        NSLog(@"%@",array);
+        [myType handleData:array];
+        
+        UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"网络错误" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        
+        [alter show];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [alter dismissWithClickedButtonIndex:0 animated:YES];
+        });
+        
+          [MBProgressHUD hideHUDForView:self.collectionView animated:YES];
     }];
     
 }
@@ -119,7 +175,7 @@
                 if ([dic[@"auditionList"] count]) {
                     
                     
-                    model.url = dic[@"auditionList"][2][@"url"];
+                    model.url = dic[@"auditionList"][0][@"url"];
                     
                     
                     

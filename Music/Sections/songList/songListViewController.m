@@ -49,6 +49,7 @@
     self.musicPlayerController = [MusicPlayerController shareMusicPlayerController];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 124) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
+    
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -93,7 +94,7 @@
     
     CGSize size = self.imgView.frame.size;
     
-    self.imgView.backgroundColor = [UIColor blueColor];
+//    self.imgView.backgroundColor = [UIColor blueColor];
     
     self.listName = [[UILabel alloc] initWithFrame:CGRectMake(20, size.height - 70, size.width - 40, 40)];
 //    self.listName.backgroundColor = [UIColor yellowColor];
@@ -220,9 +221,10 @@ manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"appl
     
     (id)str != [NSNull null] ?  cell.textLabel.text = str : nil;
     cell.detailTextLabel.text = model.singerName;
-  
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -271,6 +273,7 @@ manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"appl
 
 - (void)downLoadAllSong
 {
+    self.tableView.editing = !self.tableView.isEditing;
     
 }
 
@@ -286,8 +289,6 @@ manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"appl
     
 }
 
-
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 60;
@@ -298,6 +299,14 @@ manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"appl
     return 60;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        [self.musicList removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

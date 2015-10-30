@@ -24,6 +24,20 @@
     self.dataSource = self.musicPlayerController.musicList;
 }
 
+
+- (IBAction)deleteAction:(UIBarButtonItem *)sender {
+    
+    if (self.tableView.isEditing) {
+        self.tableView.editing = NO;
+        sender.title = @"管理";
+        
+    }else
+    {
+        self.tableView.editing = YES;
+        sender.title = @"取消";
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
